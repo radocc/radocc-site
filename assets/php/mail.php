@@ -14,13 +14,13 @@
         if ( empty($name) OR empty($email) OR empty($subject) OR empty($phone) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
             // Set a 400 (bad request) response code and exit.
             http_response_code(400);
-            echo "Please complete the form and try again.";
+            echo "Por Favor preencha o formulário e tente novamente
             exit;
         }
 
         // Set the recipient email address.
         // FIXME: Update this to your desired email address.
-        $recipient = "hridoy1272@gmail.com";
+        $recipient = "contato@radocc.com";
 
         // Set the email subject.
         $subject = "New contact from $name";
@@ -39,7 +39,7 @@
         if (mail($recipient, $subject, $email_content, $email_headers)) {
             // Set a 200 (okay) response code.
             http_response_code(200);
-            echo "Thank You! Your message has been sent.";
+            echo "Obrigado! Sua mensagem foi encaminhado";
         } else {
             // Set a 500 (internal server error) response code.
             http_response_code(500);
@@ -49,7 +49,7 @@
     } else {
         // Not a POST request, set a 403 (forbidden) response code.
         http_response_code(403);
-        echo "There was a problem with your submission, please try again.";
+        echo "Ocorreu algum problema com o envio, por favor tente novamente.";
     }
 
 ?>
