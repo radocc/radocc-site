@@ -2,11 +2,12 @@
     background: rgba(0, 0, 0, 0) url("../img/radocc/foto_topo.jpg") no-repeat scroll center center / cover;
 }
 #sobre p {
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 200;
     text-align: justify;
     text-indent: 4em;
     margin-bottom: 1rem;
+    line-height: 24px;
 }
 .sub-title{
     font-size: 2rem;

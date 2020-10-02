@@ -219,6 +219,8 @@ img {
 .avatar-lg {
     height: 5rem;
     width: 5rem;
+    background-position: center;
+    background-size: cover;
 }
 
 .text-underlined,
@@ -469,7 +471,7 @@ img {
 }
 
 .bg-overlay::after {
-    opacity: 0.94;
+    opacity: 0.90;
     z-index: -1;
 }
 
@@ -482,7 +484,7 @@ img {
 
 /*BACKGROUND COLORS*/
 .bg-gray {
-    background-color: #f6f9fe;
+    background-color: #d6ece3;
 }
 .bg-inherit {
     background: inherit !important;
@@ -493,7 +495,7 @@ img {
 .btn.sApp-btn:before,
 .bg-overlay::after,
 .benifits-item:after {
-    background:#42B883;
+    background: linear-gradient(-47deg, #42B883 0%, #2B7855 100%);
 }
 
 /*SOCIAL ICONS*/
@@ -540,7 +542,7 @@ img {
 
 /*BACKGROUND IMAGES*/
 .welcome-area {
-    /* background: rgba(0, 0, 0, 0) url("../img/bg/welcome-bg.jpg") no-repeat scroll center center / cover; */
+    background: rgba(0, 0, 0, 0) url("../img/bg/iStock-1036244168.jpg") no-repeat scroll center center / cover;
 }
 
 .accounts .welcome-area {
@@ -1105,6 +1107,7 @@ img {
 
 .features-area.style-two .image-box {
     position: relative;
+    height: 100%;
     -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
     box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
     border-radius: 1.5rem;
@@ -1167,6 +1170,8 @@ img {
     box-shadow: 0 0.313rem 0.875rem rgba(45, 49, 54, 0.09);
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
+    height: 100%;
+    justify-content: space-between;
 }
 
 .single-review .card-top {
@@ -1837,7 +1842,7 @@ img {
     line-height: 45px;
     font-size: 18px;
     text-align: center;
-    background-color: #2F4858;
+    background-color: #42b883;
     color: #fff;
     border-radius: 4px;
 }
@@ -1880,7 +1885,7 @@ img {
 .contact-box button {
     height: 60px;
     border-radius: 8px;
-    background: #2F4858 !important;
+    background: #42b883 !important;
 }
 
 /*Map Area*/
@@ -2087,4 +2092,11 @@ img {
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .image-cover {
+      height: 100%;
+      width: 100%;
+      background-position: center;
+      background-size: cover;
   }
