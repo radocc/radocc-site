@@ -884,6 +884,9 @@ img {
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .dropdown-item.active, .dropdown-item:active {
@@ -1193,7 +1196,7 @@ img {
     content: '';
     height: 20px;
     width: 20px;
-    background-color: #f5f7fb;
+    background-color: #d6ece3;
     bottom: calc(100% - 10px);
     left: 15%;
     -webkit-transform: rotate(45deg);
@@ -2099,4 +2102,8 @@ img {
       width: 100%;
       background-position: center;
       background-size: cover;
+  }
+
+  .display-flex {
+      display: flex;
   }
