@@ -19,7 +19,10 @@
 }
 .div-sobre-img {
     min-height: 450px;
+    width: 100%;
+    height: 100%;
 }
+
 .produto {
     display: flex;
     flex-direction: row;
