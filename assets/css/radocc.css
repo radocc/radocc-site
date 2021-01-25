@@ -20,3 +20,34 @@
 .div-sobre-img {
     min-height: 450px;
 }
+.produto {
+    display: flex;
+    flex-direction: row;
+    margin-bottom:8px;
+}
+.icone-produto{
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+}
+
+.icone-vprime{
+    background: url('../img/radocc/vprime.webp') no-repeat scroll center center / cover;
+}
+
+.icone-rall{
+    background: url('../img/radocc/rall.ico') no-repeat scroll center center / cover;
+}
+
+.icone-sysfarm{
+    background: url('../img/radocc/sysfarm.webp') no-repeat scroll center center / cover;
+}
+
+.rd-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.descritivo{
+    text-transform: capitalize;
+}
